@@ -1,0 +1,13 @@
+{% include "Title.html" %}
+{% include "menu.html" %}
+<form action="{% url "validations" %}" method="post">
+    {% csrf_token %}
+
+<table align="center">
+    <tr><td><input type="text" placeholder="Contact" name="contact" required></td></tr>
+    <tr><td><input type="text" placeholder="Enter Your Otp" name="otp" required></td></tr>
+    <tr><td><input type="hidden" value="{{ name }}" name="name" required></td></tr>
+    <tr><td><input type="submit" value="Submit"></td></tr>
+</table>
+    </form>
+<h3>{{ messsage }}</h3>

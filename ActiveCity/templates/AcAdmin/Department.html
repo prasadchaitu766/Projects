@@ -1,0 +1,68 @@
+{% include 'AcAdmin/home.html' %}
+{% if DEP %}
+    <form action="{% url "update_departmnet" %}" method="post">
+    {% csrf_token %}
+
+   <table align="center">
+   <tr>
+       <th> Update  Department</th>
+   </tr>
+   <tr>
+       <td>
+           <input type="text" value="{{ DEP }}" name=department>
+           <input type="hidden" value="{{ DEP }}" name=department1>
+       </td>
+       <td>
+           <input type="submit" value="Update">
+       </td>
+   </tr>
+
+   </table>
+      </form>
+
+{% else %}
+<table align="center">
+    <tr>
+        <th>Add Department</th>
+    </tr>
+    <form action="{% url "Admindepartment" %}" method="post">
+    {% csrf_token %}
+    <tr>
+        <th>
+            <input type="text" placeholder="Department Name" name="department">
+        </th>&nbsp;
+        <th><input type="submit" value="Submit"></th>
+    </tr>
+        </form>
+    <tr>
+        {% endif %}
+
+    </tr>
+<tr></tr>
+<tr></tr>
+
+
+    <tr>
+<table align="center" border="1">
+<tr>
+    <th width="200" style="background-color: aqua">Department</th>
+        <th width="200" style="background-color: blue">Delete</th>
+        <th width="200" style="background-color: chartreuse">Update</th>
+
+</tr>
+     {% for x in dep %}
+    <tr>
+         <th width="200">{{ x.name }}</th>
+            <th width="200" style="background-color: red"><a href="{% url "dep_delete"%}?name={{ x.name }}">Delete</a></th>
+            <th width="200" style="background-color: deeppink"><a href="{% url "dep_update"%}?name={{ x.name }}">Update</a></th>
+    </tr>
+    {% endfor %}
+
+</table>
+
+    </tr>
+
+
+</table>
+<br>
+<h4 align="center">{{ message }}</h4>

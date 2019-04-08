@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<!-- saved from url=(0070)http://localhost:8069/web#menu_id=79&action=88&active_id=channel_inbox -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+                <title>#Inbox - Odoo</title>
+                <link type="image/x-icon" rel="shortcut icon" href="http://localhost:8069/web/static/src/img/favicon.ico">
+
+                <script type="text/javascript">
+                    var odoo = {
+                        csrf_token: "f005894042c6d99e7cb558349f41e010b6a2f466o",
+                    };
+                </script>
+
+                
+                <script type="text/javascript">
+                    odoo.session_info = {"username": "reddyprasad@karimiinfotech.com", "max_time_between_keys_in_ms": 55, "currencies": {"1": {"digits": [69, 2], "position": "after", "symbol": "\u20ac"}, "3": {"digits": [69, 2], "position": "before", "symbol": "$"}, "21": {"digits": [69, 2], "position": "after", "symbol": "\u20b9"}}, "uid": 1, "db": "karimiInfotech", "is_admin": true, "server_version_info": [10, 0, 0, "final", 0, ""], "server_version": "10.0-20190401", "user_context": {"lang": "en_US", "tz": false, "uid": 1}, "web.base.url": "http://localhost:8069", "name": "Administrator", "partner_id": 3, "web_tours": [], "company_id": 1, "session_id": "ea25c43048c74fec8c9884a2a154d1cf110bb60b", "is_superuser": true, "user_companies": false};
+                </script>
+
+                
+            <link href="./odoo_files/web.assets_common.0.css" rel="stylesheet">
+                
+            <link href="./odoo_files/web.assets_backend.0.css" rel="stylesheet">
+            <link href="./odoo_files/web.assets_backend.1.css" rel="stylesheet">
+                
+            <link href="./odoo_files/web_editor.summernote.0.css" rel="stylesheet">
+        
+            <link href="./odoo_files/web_editor.assets_editor.0.css" rel="stylesheet">
+    
+            <script type="text/javascript" src="./odoo_files/web.assets_common.js.download"></script>
+                
+            <script type="text/javascript" src="./odoo_files/web.assets_backend.js.download"></script>
+
+                
+                    <!--[if lt IE 10]>
+                        <body class="ie9">
+                    <![endif]-->
+                
+
+                
+            <script type="text/javascript" src="./odoo_files/web_editor.summernote.js.download"></script>
+        
+            <script type="text/javascript" src="./odoo_files/web_editor.assets_editor.js.download"></script>
+    
+        <script type="text/javascript">
+            odoo.define('web.web_client', function (require) {
+                var WebClient = require('web.WebClient');
+                var web_client = new WebClient();
+                $(function() {
+                    web_client.setElement($(document.body));
+                    web_client.start();
+                });
+                return web_client;
+            });
+        </script>
+    
+            
+            <script type="text/javascript" src="./odoo_files/en_US"></script></head>
+            <body class="o_web_client o_no_chat_window">
+                
+            
+            
+            
+
+            <nav id="oe_main_menu_navbar" class="navbar navbar-inverse">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    
+        <ul class="nav navbar-nav navbar-left oe_application_menu_placeholder" style="">
+            <li class="active" style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=79&amp;action=88" class="oe_menu_leaf" data-menu="79" data-action-model="ir.actions.client" data-action-id="88">
+            <span class="oe_menu_text">
+                Discuss
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=244&amp;action=334" class="oe_menu_leaf" data-menu="244" data-action-model="ir.actions.act_window" data-action-id="334">
+            <span class="oe_menu_text">
+                Calendar
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=88&amp;action=" class="oe_menu_toggler" data-menu="88" data-menu-xmlid="sales_team.menu_base_partner">
+            <span class="oe_menu_text">
+                Sales
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=182&amp;action=" class="oe_menu_toggler" data-menu="182">
+            <span class="oe_menu_text">
+                Inventory
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=105&amp;action=" class="oe_menu_toggler" data-menu="105">
+            <span class="oe_menu_text">
+                Invoicing
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=237&amp;action=" class="oe_menu_toggler" data-menu="237">
+            <span class="oe_menu_text">
+                Employees
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=248&amp;action=" class="oe_menu_toggler" data-menu="248" data-menu-xmlid="hr_recruitment.menu_hr_recruitment_root">
+            <span class="oe_menu_text">
+                Recruitment
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=261&amp;action=" class="oe_menu_toggler" data-menu="261">
+            <span class="oe_menu_text">
+                Attendances
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=5&amp;action=" class="oe_menu_toggler" data-menu="5">
+            <span class="oe_menu_text">
+                Apps
+            </span>
+        </a>
+    
+            </li><li style="display: block;">
+                
+        
+        <a href="http://localhost:8069/web#menu_id=4&amp;action=" class="oe_menu_toggler" data-menu="4" data-menu-xmlid="base.menu_administration">
+            <span class="oe_menu_text">
+                Settings
+            </span>
+        </a>
+    
+            </li>
+            <li id="menu_more_container" class="dropdown" style="display: none;">
+                <a href="http://localhost:8069/web#" class="dropdown-toggle" data-toggle="dropdown">More <b class="caret"></b></a>
+                <ul id="menu_more" class="dropdown-menu"></ul>
+            </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right oe_user_menu_placeholder" style=""><li class="o_user_menu">
+        <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:8069/web#">
+            <img class="img-circle oe_topbar_avatar" src="./odoo_files/image">
+            <span class="oe_topbar_name">Administrator</span> <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+            <li><a data-menu="documentation" href="http://localhost:8069/web#">Documentation</a></li>
+            <li><a data-menu="support" href="http://localhost:8069/web#">Support</a></li>
+            <li class="divider"></li>
+            <li><a data-menu="settings" href="http://localhost:8069/web#">Preferences</a></li>
+            <li><a data-menu="account" href="http://localhost:8069/web#">My Odoo.com account</a></li>
+            <li><a data-menu="logout" href="http://localhost:8069/web#">Log out</a></li>
+        </ul>
+    </li></ul>
+        <ul class="nav navbar-nav navbar-right oe_systray" style=""><li class="o_planner_systray hidden-xs">
+            <div class="progress" data-original-title="" title=""><div class="progress-bar"></div></div>
+        </li><li class="o_mail_navbar_item o_no_notification">
+            <a href="http://localhost:8069/web#" title="Inbox">
+                <i class="fa fa-at"></i> <span class="o_notification_counter">0</span>
+            </a>
+        </li><li class="o_mail_navbar_item o_no_notification">
+            <a aria-expanded="false" class="dropdown-toggle" data-toggle="dropdown" href="http://localhost:8069/web#" title="Conversations">
+                <i class="fa fa-comments"></i> <span class="o_notification_counter">0</span>
+            </a>
+            <ul class="o_mail_navbar_dropdown dropdown-menu" role="menu">
+                <li class="o_mail_navbar_dropdown_top">
+                    <div>
+                        <button class="btn btn-sm o_filter_button o_selected" type="button"> All </button>
+                        <button class="btn btn-sm o_filter_button" data-filter="chat" type="button"> Chat </button>
+                        <button class="btn btn-sm o_filter_button" data-filter="channels" type="button"> Channels </button>
+                    </div>
+                    <button class="btn btn-sm o_new_message" type="button"> New message </button>
+                </li>
+                <li class="o_mail_navbar_dropdown_channels"></li>
+            </ul>
+        </li></ul>
+    
+                </div>
+            </nav>
+            <div class="o_main">
+                <div class="o_sub_menu o_hidden">
+                    
+        <a class="o_sub_menu_logo" href="http://localhost:8069/web">
+            <span class="oe_logo_edit oe_logo_edit_admin">Edit Company data</span>
+            <img src="./odoo_files/company_logo">
+        </a>
+        <div class="o_sub_menu_content">
+            
+                <div style="" class="oe_secondary_menu" data-menu-parent="79">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="244">
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="88">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=102&amp;action=123" class="oe_menu_leaf" data-menu="102" data-action-model="ir.actions.act_window" data-action-id="123">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section" data-menu-xmlid="sales_team.menu_sales">
+                            Sales
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=90&amp;action=55" class="oe_menu_leaf" data-menu="90" data-action-model="ir.actions.act_window" data-action-id="55">
+            <span class="oe_menu_text">
+                Customers
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=179&amp;action=243" class="oe_menu_leaf" data-menu="179" data-action-model="ir.actions.act_window" data-action-id="243">
+            <span class="oe_menu_text">
+                Quotations
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=175&amp;action=240" class="oe_menu_leaf" data-menu="175" data-action-model="ir.actions.act_window" data-action-id="240">
+            <span class="oe_menu_text">
+                Sales Orders
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=164&amp;action=117" class="oe_menu_leaf" data-menu="164" data-action-model="ir.actions.act_window" data-action-id="117">
+            <span class="oe_menu_text">
+                Products
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Invoicing
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=177&amp;action=241" class="oe_menu_leaf" data-menu="177" data-action-model="ir.actions.act_window" data-action-id="241">
+            <span class="oe_menu_text">
+                Sales to Invoice
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=178&amp;action=242" class="oe_menu_leaf" data-menu="178" data-action-model="ir.actions.act_window" data-action-id="242">
+            <span class="oe_menu_text">
+                Orders to Upsell
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Reports
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=161&amp;action=238" class="oe_menu_leaf" data-menu="161" data-action-model="ir.actions.act_window" data-action-id="238">
+            <span class="oe_menu_text">
+                Sales
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Configuration
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=91&amp;action=122" class="oe_menu_leaf" data-menu="91" data-action-model="ir.actions.act_window" data-action-id="122">
+            <span class="oe_menu_text">
+                Settings
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=104&amp;action=125" class="oe_menu_leaf" data-menu="104" data-action-model="ir.actions.act_window" data-action-id="125">
+            <span class="oe_menu_text">
+                Sales Teams
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="182">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=203&amp;action=276" class="oe_menu_leaf" data-menu="203" data-action-model="ir.actions.act_window" data-action-id="276">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Operations
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=205&amp;action=278" class="oe_menu_leaf" data-menu="205" data-action-model="ir.actions.act_window" data-action-id="278">
+            <span class="oe_menu_text">
+                All Transfers
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Inventory Control
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=221&amp;action=310" class="oe_menu_leaf" data-menu="221" data-action-model="ir.actions.act_window" data-action-id="310">
+            <span class="oe_menu_text">
+                Products
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=219&amp;action=301" class="oe_menu_leaf" data-menu="219" data-action-model="ir.actions.act_window" data-action-id="301">
+            <span class="oe_menu_text">
+                Reordering Rules
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=200&amp;action=271" class="oe_menu_leaf" data-menu="200" data-action-model="ir.actions.act_window" data-action-id="271">
+            <span class="oe_menu_text">
+                Inventory Adjustments
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=199&amp;action=270" class="oe_menu_leaf" data-menu="199" data-action-model="ir.actions.act_window" data-action-id="270">
+            <span class="oe_menu_text">
+                Scrap
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Schedulers
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=214&amp;action=223" class="oe_menu_leaf" data-menu="214" data-action-model="ir.actions.act_window" data-action-id="223">
+            <span class="oe_menu_text">
+                Run Schedulers
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Reports
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=206&amp;action=289" class="oe_menu_leaf" data-menu="206" data-action-model="ir.actions.act_window" data-action-id="289">
+            <span class="oe_menu_text">
+                Inventory Valuation
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=220&amp;action=304" class="oe_menu_leaf" data-menu="220" data-action-model="ir.actions.act_window" data-action-id="304">
+            <span class="oe_menu_text">
+                Stock Moves
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=216&amp;action=225" class="oe_menu_leaf" data-menu="216" data-action-model="ir.actions.act_window" data-action-id="225">
+            <span class="oe_menu_text">
+                Procurement Exceptions
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Configuration
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=223&amp;action=311" class="oe_menu_leaf" data-menu="223" data-action-model="ir.actions.act_window" data-action-id="311">
+            <span class="oe_menu_text">
+                Settings
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=189&amp;action=" class="oe_menu_toggler" data-menu="189">
+            <span class="oe_menu_text">
+                Products
+            </span>
+        </a>
+    
+                
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked o_hidden">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=190&amp;action=114" class="oe_menu_leaf" data-menu="190" data-action-model="ir.actions.act_window" data-action-id="114">
+            <span class="oe_menu_text">
+                Product Categories
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="105">
+                    
+                        <div class="oe_secondary_menu_section">
+                            Sales
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=137&amp;action=200" class="oe_menu_leaf" data-menu="137" data-action-model="ir.actions.act_window" data-action-id="200">
+            <span class="oe_menu_text">
+                Customer Invoices
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=131&amp;action=56" class="oe_menu_leaf" data-menu="131" data-action-model="ir.actions.act_window" data-action-id="56">
+            <span class="oe_menu_text">
+                Customers
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=132&amp;action=117" class="oe_menu_leaf" data-menu="132" data-action-model="ir.actions.act_window" data-action-id="117">
+            <span class="oe_menu_text">
+                Sellable Products
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Purchases
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=138&amp;action=201" class="oe_menu_leaf" data-menu="138" data-action-model="ir.actions.act_window" data-action-id="201">
+            <span class="oe_menu_text">
+                Vendor Bills
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=133&amp;action=57" class="oe_menu_leaf" data-menu="133" data-action-model="ir.actions.act_window" data-action-id="57">
+            <span class="oe_menu_text">
+                Vendors
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Reports
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=111&amp;action=" class="oe_menu_toggler" data-menu="111">
+            <span class="oe_menu_text">
+                Business Intelligence
+            </span>
+        </a>
+    
+                
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked o_hidden">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=146&amp;action=209" class="oe_menu_leaf" data-menu="146" data-action-model="ir.actions.act_window" data-action-id="209">
+            <span class="oe_menu_text">
+                Invoices
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Configuration
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=145&amp;action=207" class="oe_menu_leaf" data-menu="145" data-action-model="ir.actions.act_window" data-action-id="207">
+            <span class="oe_menu_text">
+                Settings
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=114&amp;action=" class="oe_menu_toggler" data-menu="114">
+            <span class="oe_menu_text">
+                Accounting
+            </span>
+        </a>
+    
+                
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked o_hidden">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=127&amp;action=162" class="oe_menu_leaf" data-menu="127" data-action-model="ir.actions.act_window" data-action-id="162">
+            <span class="oe_menu_text">
+                Taxes
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=139&amp;action=204" class="oe_menu_leaf" data-menu="139" data-action-model="ir.actions.act_window" data-action-id="204">
+            <span class="oe_menu_text">
+                Fiscal Positions
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=157&amp;action=" class="oe_menu_toggler" data-menu="157">
+            <span class="oe_menu_text">
+                Payments
+            </span>
+        </a>
+    
+                
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked o_hidden">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=158&amp;action=233" class="oe_menu_leaf" data-menu="158" data-action-model="ir.actions.act_window" data-action-id="233">
+            <span class="oe_menu_text">
+                Payment Acquirers
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=159&amp;action=234" class="oe_menu_leaf" data-menu="159" data-action-model="ir.actions.act_window" data-action-id="234">
+            <span class="oe_menu_text">
+                Payment Transactions
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="237">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=241&amp;action=326" class="oe_menu_leaf" data-menu="241" data-action-model="ir.actions.act_window" data-action-id="326">
+            <span class="oe_menu_text">
+                Employees
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=243&amp;action=331" class="oe_menu_leaf" data-menu="243" data-action-model="ir.actions.act_window" data-action-id="331">
+            <span class="oe_menu_text">
+                Departments
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="248">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=250&amp;action=341" class="oe_menu_leaf" data-menu="250" data-action-model="ir.actions.act_window" data-action-id="341">
+            <span class="oe_menu_text">
+                Job Positions
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=253&amp;action=344" class="oe_menu_leaf" data-menu="253" data-action-model="ir.actions.act_window" data-action-id="344">
+            <span class="oe_menu_text">
+                Resumes and Letters
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=258&amp;action=351" class="oe_menu_leaf" data-menu="258" data-action-model="ir.actions.act_window" data-action-id="351">
+            <span class="oe_menu_text">
+                Reports
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Configuration
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=259&amp;action=354" class="oe_menu_leaf" data-menu="259" data-action-model="ir.actions.act_window" data-action-id="354">
+            <span class="oe_menu_text">
+                Settings
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=254&amp;action=345" class="oe_menu_leaf" data-menu="254" data-action-model="ir.actions.act_window" data-action-id="345">
+            <span class="oe_menu_text">
+                Stages
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=251&amp;action=342" class="oe_menu_leaf" data-menu="251" data-action-model="ir.actions.act_window" data-action-id="342">
+            <span class="oe_menu_text">
+                Job Positions
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=260&amp;action=355" class="oe_menu_leaf" data-menu="260" data-action-model="ir.actions.act_window" data-action-id="355">
+            <span class="oe_menu_text">
+                Departments
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="261">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=262&amp;action=361" class="oe_menu_leaf" data-menu="262" data-action-model="ir.actions.client" data-action-id="361">
+            <span class="oe_menu_text">
+                My Attendances
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Manage Attendances
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=264&amp;action=357" class="oe_menu_leaf" data-menu="264" data-action-model="ir.actions.act_window" data-action-id="357">
+            <span class="oe_menu_text">
+                Attendances
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=265&amp;action=326" class="oe_menu_leaf" data-menu="265" data-action-model="ir.actions.act_window" data-action-id="326">
+            <span class="oe_menu_text">
+                Employees
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=266&amp;action=360" class="oe_menu_leaf" data-menu="266" data-action-model="ir.actions.client" data-action-id="360">
+            <span class="oe_menu_text">
+                Kiosk Mode
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=267&amp;action=358" class="oe_menu_leaf" data-menu="267" data-action-model="ir.actions.act_window" data-action-id="358">
+            <span class="oe_menu_text">
+                Reports
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=268&amp;action=365" class="oe_menu_leaf" data-menu="268" data-action-model="ir.actions.act_window" data-action-id="365">
+            <span class="oe_menu_text">
+                Configuration
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="5">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=52&amp;action=37" class="oe_menu_leaf" data-menu="52" data-action-model="ir.actions.act_window" data-action-id="37">
+            <span class="oe_menu_text">
+                Apps
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=54&amp;action=39" class="oe_menu_leaf" data-menu="54" data-action-model="ir.actions.client" data-action-id="39">
+            <span class="oe_menu_text">
+                Updates
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                </div>
+            
+                <div style="display: none" class="oe_secondary_menu" data-menu-parent="4">
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=69&amp;action=76" class="oe_menu_leaf" data-menu="69" data-action-model="ir.actions.client" data-action-id="76">
+            <span class="oe_menu_text">
+                Dashboard
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Users
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=65&amp;action=71" class="oe_menu_leaf" data-menu="65" data-action-model="ir.actions.act_window" data-action-id="71">
+            <span class="oe_menu_text">
+                Users
+            </span>
+        </a>
+    
+                
+        
+    
+            </li><li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=61&amp;action=51" class="oe_menu_leaf" data-menu="61" data-action-model="ir.actions.act_window" data-action-id="51">
+            <span class="oe_menu_text">
+                Companies
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            
+                            
+        
+        <a href="http://localhost:8069/web#menu_id=71&amp;action=78" class="oe_menu_leaf" data-menu="71" data-action-model="ir.actions.act_window" data-action-id="78">
+            <span class="oe_menu_text">
+                General Settings
+            </span>
+        </a>
+    
+                        </div>
+                        
+        
+    
+                    
+                        <div class="oe_secondary_menu_section">
+                            Translations
+                            
+                        </div>
+                        
+        <ul class="oe_secondary_submenu nav nav-pills nav-stacked">
+            <li>
+                
+        
+        <a href="http://localhost:8069/web#menu_id=56&amp;action=42" class="oe_menu_leaf" data-menu="56" data-action-model="ir.actions.act_window" data-action-id="42">
+            <span class="oe_menu_text">
+                Load a Translation
+            </span>
+        </a>
+    
+                
+        
+    
+            </li>
+        </ul>
+    
+                    
+                </div>
+            
+        </div>
+        <div class="o_sub_menu_footer">
+            Powered by <a href="http://www.odoo.com/" target="_blank"><span>Odoo</span></a>
+        </div>
+    
+                </div>
+                <div class="o_main_content"><div class="o_control_panel">
+        <ol class="breadcrumb"><li class="active">#Inbox</li></ol>
+        <div class="o_cp_searchview"><div class="o_searchview active">
+    <span class="o_searchview_more fa fa-search-plus" title="Advanced Search..."></span>
+<ul class="dropdown-menu o_searchview_autocomplete" role="menu" style="display: none;"></ul><input class="o_searchview_input" placeholder="Search..." type="text"></div></div>
+        <div class="o_cp_left">
+            <div class="o_cp_buttons"><div>
+            <button class="btn btn-primary btn-sm o_mail_toggle_channels visible-xs-inline" title="Toggle Channels" type="button" style="display: inline-block;">Channels</button>
+            <button class="btn btn-primary btn-sm o_mail_chat_button_invite" title="Invite people" type="button" style="display: none;">Invite</button>
+            <button class="btn btn-default btn-sm o_mail_chat_button_mark_read disabled" title="Mark all as read" type="button" style="display: inline-block;">Mark all read</button>
+            <button class="btn btn-primary btn-sm o_mail_chat_button_unstar_all" title="Unstar all messages" type="button" style="display: none;">Unstar all</button>
+            <button class="btn btn-default btn-sm o_mail_chat_button_unsubscribe" title="Unsubscribe from channel" type="button" style="display: none;">Unsubscribe</button>
+            <button class="btn btn-default btn-sm o_mail_chat_button_settings" title="Open channel settings" type="button" style="display: none;">Settings</button>
+        </div></div>
+            <div class="o_cp_sidebar"></div>
+        </div>
+        <div class="o_cp_right">
+            <div class="btn-group o_search_options" style="display: none;"><div class="btn-group o_dropdown">
+    <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+        <span class="fa fa-filter"></span> Filters <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu o_filters_menu" role="menu">
+        <li data-index="0" title="Unread messages">
+        <a href="http://localhost:8069/web#">Need Action</a>
+    </li><li class="divider"></li><li data-index="0">
+        <a href="http://localhost:8069/web#">Has attachments</a>
+    </li><li class="divider"></li><li class="o_add_filter o_closed_menu">
+            <a href="http://localhost:8069/web#">Add Custom Filter</a>
+        </li>
+        <li class="o_add_filter_menu">
+            <button class="btn btn-primary btn-sm o_apply_filter" type="button">Apply</button>
+            <button class="btn btn-default btn-sm o_add_condition" type="button"><span class="fa fa-plus-circle"></span> Add a condition</button>
+        </li>
+    </ul>
+</div><div class="btn-group o_dropdown">
+    <button class="o_dropdown_toggler_btn btn btn-sm dropdown-toggle" data-toggle="dropdown">
+        <span class="fa fa-star"></span> Favorites <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu o_favorites_menu" role="menu">
+        <li class="divider"></li>
+        <li class="o_save_search o_closed_menu">
+            <a href="http://localhost:8069/web#">Save current search</a>
+        </li>
+        <li class="o_save_name">
+            <input type="text">
+        </li>
+        <li class="o_save_name">
+            <span><div class="o_checkbox"><input type="checkbox"><span></span></div> Use by default</span>
+        </li>
+        <li class="o_save_name">
+            <span><div class="o_checkbox"><input type="checkbox"><span></span></div> Share with all users </span><span class="fa fa-users"></span>
+        </li>
+        <li class="o_save_name">
+            <button class="btn btn-primary btn-sm" type="button">Save</button>
+        </li>
+    </ul>
+</div></div>
+            <div class="o_cp_pager"></div>
+            <div class="btn-group btn-group-sm o_cp_switch_buttons"></div>
+        </div>
+    </div><div class="o_content"><div class="o_mail_chat">
+            <div class="o_mail_chat_sidebar o_tooltip_parent">
+            <div data-channel-id="channel_inbox" class="o_mail_chat_channel_item o_active">
+                <span class="o_channel_name"> <i class="fa fa-at"></i> Inbox </span>
+                
+                
+        <span class="o_mail_sidebar_needaction badge hide">
+            0
+        </span>
+    
+            </div>
+            <div data-channel-id="channel_starred" class="o_mail_chat_channel_item">
+                <span class="o_channel_name"> <i class="fa fa-star-o"></i> Starred </span>
+                
+                
+        <span class="o_mail_sidebar_needaction badge hide">
+            0
+        </span>
+    
+            </div>
+
+            
+            
+        
+        
+        
+            <div class="o_mail_sidebar_title">
+                <h4 class="o_mail_open_channels">Channels</h4>
+                <span class="fa fa-plus o_add" title="Add" data-type="public"></span>
+            </div>
+        
+    
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            <div data-channel-id="1" title="general" class="o_mail_chat_channel_item">
+                <span class="o_channel_name">
+                    
+                    <span class="o_mail_hash">#</span>
+                    general
+                    
+                </span>
+                
+        <span class="o_mail_sidebar_needaction badge hide">
+            0
+        </span>
+    
+                <span title="Leave this channel" data-channel-id="1" class="fa fa-times o_mail_partner_unpin "></span>
+            </div>
+        
+        <div class="o_mail_add_channel" data-type="public">
+            <span>#</span>
+            <input type="text" placeholder="Add a channel" class="ui-autocomplete-input" autocomplete="off">
+        </div>
+    
+
+            
+            
+        
+        
+        
+            <div class="o_mail_sidebar_title">
+                <h4 class="">Direct Messages</h4>
+                <span class="fa fa-plus o_add" title="Add" data-type="dm"></span>
+            </div>
+        
+    
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        <div class="o_mail_add_channel" data-type="dm">
+            
+            <input type="text" placeholder="Open chat" class="ui-autocomplete-input" autocomplete="off">
+        </div>
+    
+
+            
+            
+        
+        
+        
+            <div class="o_mail_sidebar_title">
+                <h4 class="">Private Channels</h4>
+                <span class="fa fa-plus o_add" title="Add" data-type="private"></span>
+            </div>
+        
+    
+            
+        
+            
+            
+        
+            
+            
+        
+            
+            
+        
+        <div class="o_mail_add_channel" data-type="private">
+            <span>#</span>
+            <input type="text" placeholder="Add a channel">
+        </div>
+    
+        <div class="o_tooltip bottom o_animated" style="top: 100.5px; left: 216.797px; opacity: 1;">
+        <div class="o_tooltip_overlay" style="top: -10px; right: -50px; bottom: -50px; left: -50px;"></div>
+        <div class="o_tooltip_content" style="width: 100%; height: 100%;">
+            <p>Channels make it easy to organize information across different topics and groups.</p> <p>Try to <b>create your first channel</b> (e.g. sales, marketing, product XYZ, after work party, etc).</p>
+        </div>
+    </div></div>
+            <div class="o_mail_chat_content">
+                
+                    <div class="o_mail_annoying_notification_bar">
+                        <span class="o_mail_request_permission">Odoo needs your permission to <a href="http://localhost:8069/web#"> enable desktop notifications</a>.</span>
+                        <span class="fa fa-close"></span>
+                    </div>
+                
+            <div class="o_mail_thread">
+        
+        
+            <div class="o_mail_no_content">
+        
+            <div class="o_thread_title">Congratulations, your inbox is empty</div>
+            <div>New messages appear here.</div>
+        
+        
+    </div>
+        
+        
+    </div><div class="o_chat_composer" style="display: none;">
+         <div class="o_composer_attachments_list"></div>
+         
+         <div class="o_composer "><div class="dropup o_composer_mention_dropdown"></div>
+             <div class="o_composer_input">
+                 <textarea class="o_composer_text_field" placeholder="Write something..." tabindex="2" style="height: 28px;"></textarea><textarea disabled="" class="o_composer_text_field" style="position: absolute; opacity: 0; height: 10px; top: -10000px; left: -10000px; width: 110px;"></textarea>
+             </div>
+             
+                 <div class="btn-group o_composer_buttons">
+                    <button class="btn btn-sm btn-primary o_composer_button_send" tabindex="3" type="button">Send</button>
+                    <button class="btn btn-sm btn-icon fa fa-smile-o o_composer_button_emoji" data-toggle="popover" tabindex="4" type="button" data-original-title="" title=""></button>
+                    <button class="btn btn-sm btn-icon fa fa-paperclip o_composer_button_add_attachment" tabindex="5" type="button"></button>
+                 </div>
+             
+         </div>
+
+         <span class="hide">
+            
+    <div class="o_hidden_input_file ">
+        <form class="o_form_binary_form" enctype="multipart/form-data" method="post" action="http://localhost:8069/web/binary/upload_attachment" target="o_chat_fileupload2">
+            <input name="csrf_token" type="hidden" value="f005894042c6d99e7cb558349f41e010b6a2f466o">
+            
+            <input name="callback" type="hidden" value="o_chat_fileupload2">
+            <input class="o_form_input_file" name="ufile" type="file">
+            
+            
+                
+                
+                <input name="model" type="hidden" value="mail.compose.message">
+                <input name="id" type="hidden" value="0">
+                <input name="session_id" type="hidden" value="ea25c43048c74fec8c9884a2a154d1cf110bb60b">
+            
+        </form>
+        <iframe style="display: none" id="o_chat_fileupload2" name="o_chat_fileupload2" src="./odoo_files/saved_resource.html"></iframe>
+    </div>
+
+         </span>
+         <span class="o_composer_emoji"></span>
+    </div><div class="o_chat_composer" style="display: none;">
+         <div class="o_composer_attachments_list"></div>
+         
+             <div class="o_composer_subject">
+                 <input placeholder="Subject" tabindex="1" type="text">
+                 <div class="btn-group o_composer_buttons">
+                    <button class="btn btn-sm btn-primary o_composer_button_send" tabindex="3" type="button">Send</button>
+                    <button class="btn btn-sm btn-icon fa fa-smile-o o_composer_button_emoji" data-toggle="popover" tabindex="4" type="button" data-original-title="" title=""></button>
+                    <button class="btn btn-sm btn-icon fa fa-paperclip o_composer_button_add_attachment" tabindex="5" type="button"></button>
+                 </div>
+             </div>
+         
+         <div class="o_composer o_extended_composer"><div class="dropup o_composer_mention_dropdown"></div>
+             <div class="o_composer_input">
+                 <textarea class="o_composer_text_field" placeholder="Write something..." tabindex="2" style="height: 120px;"></textarea><textarea disabled="" class="o_composer_text_field" style="position: absolute; opacity: 0; height: 10px; top: -10000px; left: -10000px; width: 110px;"></textarea>
+             </div>
+             
+         </div>
+
+         <span class="hide">
+            
+    <div class="o_hidden_input_file ">
+        <form class="o_form_binary_form" enctype="multipart/form-data" method="post" action="http://localhost:8069/web/binary/upload_attachment" target="o_chat_fileupload3">
+            <input name="csrf_token" type="hidden" value="f005894042c6d99e7cb558349f41e010b6a2f466o">
+            
+            <input name="callback" type="hidden" value="o_chat_fileupload3">
+            <input class="o_form_input_file" name="ufile" type="file">
+            
+            
+                
+                
+                <input name="model" type="hidden" value="mail.compose.message">
+                <input name="id" type="hidden" value="0">
+                <input name="session_id" type="hidden" value="ea25c43048c74fec8c9884a2a154d1cf110bb60b">
+            
+        </form>
+        <iframe style="display: none" id="o_chat_fileupload3" name="o_chat_fileupload3" src="./odoo_files/saved_resource(1).html"></iframe>
+    </div>
+
+         </span>
+         <span class="o_extended_composer_emoji"></span>
+    </div></div>
+        </div></div></div>
+            </div>
+        
+            
+        
+    
+    <div class="o_notification_manager"></div><div class="o_loading" style="display: none;">Loading</div><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-1" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span><ul class="ui-autocomplete ui-front ui-menu ui-widget ui-widget-content" id="ui-id-2" tabindex="0" style="display: none;"></ul><span role="status" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></span></body></html>

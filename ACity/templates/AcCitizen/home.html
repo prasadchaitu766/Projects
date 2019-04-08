@@ -1,0 +1,14 @@
+{% include 'Title.html' %}
+
+    <table align="center" border="1">
+   <tr>
+        <th width="100"><a href="{% url "citizen_Home" %}">CitizenHome</a></th>
+        <th width="100"><a href="{% url "citizen_profile" %}/username={{ name }}"> Update Profile </a></th>
+        <th width="100"><a href="">Complaints</a></th>
+        <th width="100"><a href="">View Status</a></th>
+        <th width="100"><a href="">Feedback</a></th>
+        <th width="100"><a href="{% url "citizen_logout" %}">Logout</a></th>
+    </tr>
+
+
+</table>

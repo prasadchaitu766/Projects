@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Login</title>
+</head>
+<body>
+{% load staticfiles %}
+{% include "Title.html" %}
+{% include "menu.html" %}
+<table align="center">
+
+    <tr>
+
+        <th>
+            <img src="{% static "Images/LoginRed.jpg"  %}" alt="">
+        </th>
+
+
+        <td>
+            <form action="{% url 'login_check' %}" method="post">
+                {% csrf_token %}
+
+            <table align="center">
+    <tr>
+         <tr><th> Citizen login</th></tr>
+
+
+        <td><input type="text" placeholder="Usename" name="Username"></td></tr>
+        <tr>
+             <td><input type="password" placeholder="Password" name="Password"></td>
+        </tr>
+    <tr>
+          <td><input type="hidden" value="citizen" name="Type"></td>
+    </tr>
+
+      <tr>
+           <th><input type="submit" value="Login"></th>
+      </tr>
+
+</table>
+            </form>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

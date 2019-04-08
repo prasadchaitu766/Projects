@@ -1,0 +1,18 @@
+<html>
+<body>
+{% include 'Title.html' %}
+
+    <table align="center" border="1">
+    <tr>
+        <th width="100"><a href="{% url "admin_menu" %}">AdminHome</a></th>
+        <th width="100"><a href="{% url "officer" %}"> Officer </a></th>
+        <th width="100"><a href="">Complaints</a></th>
+        <th width="100"><a href="{% url "department" %}">Department</a></th>
+        <th width="100"><a href="">Logout</a></th>
+    </tr>
+
+
+</table>
+
+</body>
+</html>

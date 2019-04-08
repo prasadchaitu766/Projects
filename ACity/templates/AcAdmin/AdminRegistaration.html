@@ -1,0 +1,58 @@
+
+{%include "AcAdmin/home.html"  %}
+
+    <form action="{% url "officerRegistaration" %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table align="center">
+    <tr><th style="background-color: chartreuse">Officer Registration</th></tr>
+    <tr>
+        <th><input type="text" value="{{ id }}" readonly name="id"></th></tr>
+        <tr>
+            <th><input type="text" placeholder="Name of The Officer" name="name" required></th>
+        </tr>
+        <tr> <th><input type="number" placeholder="Contact No" name="contact" required></th></tr>
+        <tr>
+            <th>
+
+                <select name="dept" required>
+                    {% for x in dept_data %}
+                    <option >{{ x.name }}</option>
+                    {% endfor %}
+                </select>
+
+            </th>
+        </tr>
+       <tr> <th><input type="file"  name="image"></th></tr>
+
+      <tr>  <th><input type="text" placeholder="Username" name="username"></th></tr>
+      <tr>  <th><input type="password" placeholder="Password" name="password"></th></tr>
+{#      <tr>  <td><input type="password" placeholder="ConfirmPassword" name="password2"></td></tr>#}
+        <tr><th><input type="submit" value="Submit" ></th></tr>
+            <tr><td>
+                {{ Message }}
+            </td></tr>
+
+
+
+    </table>
+    </form>
+<table align="center" border="1">
+    <tr>
+        <th width="100" style="background-color: chartreuse">Officer Id</th>
+        <th width="100" style="background-color: chartreuse">Name</th>
+        <th width="100" style="background-color: chartreuse">Contact</th>
+        <th width="100" style="background-color: chartreuse">Department</th>
+        <th width="100" style="background-color: chartreuse">Image</th>
+    </tr>
+    {% for x in officer_data %}
+    <tr>
+        <th>{{ x.id }}</th>
+        <th>{{ x.name }}</th>
+        <th>{{ x.contact }}</th>
+        <th>{{ x.department }}</th>
+        <th><img src="{{ x.image.url }}" width="100" height="100"></th>
+        
+    </tr>
+    {% endfor %}
+</table>
+

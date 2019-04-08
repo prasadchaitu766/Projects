@@ -1,0 +1,38 @@
+
+{%include "AcAdmin/home.html"  %}
+
+    <form action="{% url "officerRegistaration" %}" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <table align="center">
+    <tr>
+        <td><input type="text" value="{{ id }}" readonly name="id"></td></tr>
+        <tr>
+            <td><input type="text" placeholder="Name of The Officer" name="name" required></td>
+        </tr>
+        <tr> <td><input type="number" placeholder="Contact No" name="contact" required></td></tr>
+        <tr>
+            <td>
+
+                <select name="dept" required>
+                    {% for x in department %}
+                    <option >{{ x.name }}</option>
+                    {% endfor %}
+                </select>
+
+            </td>
+        </tr>
+       <tr> <td><input type="file"  name="image"></td></tr>
+
+      <tr>  <td><input type="text" placeholder="Username" name="username"></td></tr>
+      <tr>  <td><input type="password" placeholder="Password" name="password"></td></tr>
+{#      <tr>  <td><input type="password" placeholder="ConfirmPassword" name="password2"></td></tr>#}
+        <tr><th><input type="submit" value="Submit" ></th></tr>
+            <tr><td>
+                {{ Message }}
+            </td></tr>
+
+
+
+    </table>
+    </form>
+

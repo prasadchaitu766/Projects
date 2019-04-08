@@ -1,0 +1,9 @@
+
+{% for x in qs %}
+<table align="center">
+    <tr><td><input type="text" value="{{ x.Citizen_id }}" name="id" readonly></td></tr>
+    <tr><td><input type="text" value="{{ x.name }}" name="name"></td></tr>
+    <tr><td><input type="text" value="{{ x.contact }}" name="contact"></td></tr>
+    <tr><td><input type="text" value="{{ x.username }}" name="contact"></td></tr>
+</table>
+{% endfor %}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<link rel="stylesheet" href="{% static 'css/bar.css' %}">
+<html>
+<head>
+	<title>Welcome to MeliSoftware</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<header>
+  <h2>MeliSoftware</h2>
+</header>
+
+
+
+
+      <div class="navbar">
+  <a href="/home/?type=home">Home</a>
+  <a href="#news">SignUp</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+
+      <a href="/campus/?type=campus">Herat</a>
+      <a href="/campus/?type=campus">Main Campus</a>
+      <a href="/campus/?type=campus">Arzan Qimat</a>
+      <a href="/campus/?type=campus">Karte Now</a>
+      <a href="/campus/?type=campus">Taimani</a>
+      <a href="/campus/?type=campus">Barchi</a>
+      <a href="/campus/?type=campus">Mazar</a>
+      <a href="/campus/?type=campus">Jalalabad First Campus</a>
+      <a href="/campus/?type=campus">Jalalabad Second Campus</a>
+    </div>
+  </div>
+</div>
+
+{% if type == "home" %}
+  <style>
+        .image{
+            display: inline-block;
+            width: 20%;
+            margin: 20px 20px 20px 20px  ;
+        }
+    </style>
+
+           <div class="image">
+               <img src="{% static 'images/1.jpg' %}" width=100%" height="200">
+           </div>
+              <div class="image">
+               <img src="{% static 'images/2.gif' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/3.jpg' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/4.jpg' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/6.jpg' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/7.jpeg' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/8.jpeg' %}" width="100%" height="200">
+           </div>
+<div class="image">
+               <img src="{% static 'images/9.jpg' %}" width="100%" height="200">
+           </div>
+
+
+
+
+{% endif%}
+
+
+
+
+
+{% if type == "campus" %}
+    <link rel="stylesheet" href="{% static 'css/jquery.css' %}">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#row").click(function(){
+    $("#column1").slideToggle("slow");
+  });
+});
+</script>
+
+
+
+
+
+
+<div class="row">
+
+  <div class="column" style="background-color:darkorange;">
+    <a href="//"><h2>HumanResourse</h2></a>
+  <img src="{% static 'images/hr.jpeg' %}" width="100" height="100">
+  </div>
+    <div id="column1">login</div>
+  <a href="/finance/">
+  <div class="column" style="background-color:darkorange;">
+    <h2>Finance</h2>
+     <img src="{% static 'images/finance.jpeg' %}" width="100" height="100">
+  </div></a>
+  <a href="/accounting/">
+  <div class="column" style="background-color:darkorange;">
+    <h2>Accounting</h2>
+   <img src="{% static 'images/accounting.jpeg' %}" width="100" height="100">
+  </div></a>
+  <a href="/crm/">
+  <div class="column" style="background-color:darkorange;">
+    <h2>CRM</h2>
+<img src="{% static 'images/crm.png' %}" width="100" height="100">
+  </div></a>
+
+  <a href="/ems/">
+  <div class="column" style="background-color:darkorange;">
+    <h2>EMS</h2>
+   <img src="{% static 'images/ems.jpg' %}" width="100" height="100">
+  </div></a>
+  <a href="/information/">
+  <div class="column" style="background-color:darkorange;">
+    <h2>IT</h2>
+    <img src="{% static 'images/Information-Technology-.jpg' %}" width="100" height="100">
+  </div></a>
+</div>
+{% endif %}
+
+<footer>
+  <p>Karimi InfoTech Pvt Ltd.</p>
+</footer>
+
+
+
+
+</body>
+</html>

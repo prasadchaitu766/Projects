@@ -1,0 +1,22 @@
+{% if request.session.username %}
+{% load staticfiles %}
+
+
+
+
+
+{#        <td><img src="{% static "images/Penguins.jpg"%}" width="150" height="100"></td>#}
+        {% include "AcCitizen/home.html" %}
+    <table align="center">
+<tr>
+    <th><th><h2> Welcome Mr/Miss : {{ request.session.username }}</h2></th></th>
+</tr>
+<tr>
+    <th>
+        <td><img src="{% static "images/Penguins.jpg"%}" width="150" height="100"></td>
+    </th>
+</tr>
+</table>
+    {% else %}
+    <h2>please login</h2>
+{% endif %}

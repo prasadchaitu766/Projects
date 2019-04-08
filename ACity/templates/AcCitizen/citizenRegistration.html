@@ -1,0 +1,20 @@
+
+
+{% include "Title.html" %}
+{% include "menu.html" %}
+{% load staticfiles %}
+<form action="{% url "register_details" %}" method="post"enctype="multipart/form-data">
+    {% csrf_token %}
+
+<table align="center">
+    <tr><td><input type="text" value="{{ id }}" name="id" readonly></td></tr>
+    <tr><td><input type="text" placeholder="Name of the Citizen" name="name" required></td></tr>
+    <tr><td><input type="number" placeholder="Contact" name="contact" required></td></tr>
+    <tr><td><textarea name="address"  cols="30" rows="10" required></textarea></td></tr>
+    <tr><td><input type="text" placeholder="City" name="city" required></td></tr>
+    <tr><td><input type="file"  name="image" required></td></tr>
+    <tr><td><input type="text" placeholder="Username"  name="username" required></td></tr>
+    <tr><td><input type="password" placeholder="Password"  name="password" required></td></tr>
+    <tr><th><input type="submit" value="Submit"></th></tr>
+</table>
+    </form>
